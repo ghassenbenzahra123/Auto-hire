@@ -1,0 +1,23 @@
+version: '3.3'
+
+
+services:
+    front:
+        build: 
+            context: ./AutoHire_react
+            dockerfile: Dockerfile
+        ports: 
+            - "3001:80"
+    back:
+        build: 
+            context: ./AutoHireBack
+            dockerfile: Dockerfile
+        restart: unless-stopped
+        ports:
+            - "3000:3000"   
+    dashboard:
+        build: 
+            context: ./DashboardAdminAutohire-main
+            dockerfile: Dockerfile
+        ports: 
+            - "3003:4545"                     

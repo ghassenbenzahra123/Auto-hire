@@ -1,0 +1,24 @@
+{
+   "type": "mongodb",
+   "url": "mongodb://bratva:test@clusterbratva-shard-00-00.fruih.mongodb.net:27017,clusterbratva-shard-00-01.fruih.mongodb.net:27017,clusterbratva-shard-00-02.fruih.mongodb.net:27017/autohire?ssl=true&replicaSet=atlas-elwe4t-shard-0&authSource=admin&retryWrites=true&w=majority",
+   "useNewUrlParser": true,
+   "ssl":true, 
+   "authSource": "admin",
+   "replicaSet": "TestCluster0-shard-0",
+   "useUnifiedTopology": true,
+  
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}

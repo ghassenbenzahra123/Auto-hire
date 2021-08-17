@@ -2,58 +2,18 @@
 
 Autohire is web application for job seekers to find the suitable jobs and Recruiters to find the best candidates.
 
-## Installation
+## 
 
-First you need to install the packages
+First you need to run the docker image
 
-```run the project
-npm install
-```
-then  run the project
+```docker-compose up -d
 
 ```
-npm start
-```
-
-## Docker
-
- les commandes principales pour utiliser une stack Docker Compose;
-
-pour  démarrer l'ensemble des conteneurs en arrière-plan
-```
-docker-compose up -d
-```
-
-pour   voir le status de l'ensemble de votre stack
-```
-docker-compose ps 
-```
-pour afficher les logs de votre stack:
-```
-docker-compose logs -f --tail 5 
-```
-
-pour arrêter l'ensemble des services d'une stack :
-```
-docker-compose stop
-```
-pour détruire l'ensemble des ressources d'une stack:
-```
-docker-compose down 
-```
-
-pour valider la syntaxe de votre fichier docker-compose.yml:
-
-```
-docker-compose config
-```
+And All set you are ready to go !
 
 
-## Team 
-```
-Here are the github accounts of the team:
-# Rania Arfaoui  : https://github.com/rania05
-# Zaalouni Mohamed Selim : https://github.com/Zslouma
-# Smati Aymen : https://github.com/aymensp
-# Ben Zahra Ghassen : https://github.com/ghassenbenzahra123
-```
+
+
+
+
+
